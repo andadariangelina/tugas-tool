@@ -10,14 +10,14 @@ int hitungHarga(int harga_satuan, int banyak){
 void pilihan_menu(){
     cout<<"\n***************************************************************************************"<<endl;
     cout<<"                          DAFTAR MENU HARGA MAKANAN DAN MINUMAN"<<endl;
-    cout<<"                                     BIG BUNS BURGER"<<endl;
+    cout<<"                                     BIG KING BURGER"<<endl;
     cout<<"                            Jln. Raya Uluwatu No. 2 Jimbaran"<<endl;
     cout<<"***************************************************************************************"<<endl;
     cout<<"|| 1. Spicy Crispy Chicken       Rp 55.000  || 7.  Mineral Water            Rp 5.500  || \n";
     cout<<"|| 2. Classical Chicken Burger   Rp 53.000  || 8.  Iced Latte               Rp 25.000 || \n";
     cout<<"|| 3. Wagyu Beef Burger          Rp 75.000  || 9.  CocaCola                 Rp 15.000 || \n";
-    cout<<"|| 4. Sirloin Beef Burger        Rp 100.000 || 10. Pepsi                    Rp 15.000 || \n";
-    cout<<"|| 5. Spaghetti Bolognese        Rp 52.500  ||[11] SELESAI                            || \n";
+    cout<<"|| 4. Sirloin Beef Burger        Rp 100.000 ||						
+    cout<<"|| 5. Spaghetti Bolognese        Rp 52.500  ||[10] SELESAI                            || \n";
     cout<<"|| 6. French Fries               Rp 30.000  ||                                        || \n";
 }
 
@@ -101,15 +101,7 @@ int main(){
 				total+=hitungHarga(harga, jumlah);
 				cout<<"Harga : Rp "<<hitungHarga(harga, jumlah)<<endl;
 				break;
-            case 10 :
-				nama_menu = "Pepsi";
-				harga = 15000;
-				cout<<"Jumlah Pesanan : ";
-				cin>>jumlah;
-				total+=hitungHarga(harga, jumlah);
-				cout<<"Harga : Rp "<<hitungHarga(harga, jumlah)<<endl;
-				break;
-			case 11 :
+		case 10 :
 				cout<<"\n***************************************************************************************"<<endl;
   			    cout<<"                                   INVOICE PEMBAYARAN"<<endl;
     			cout<<"                                     BIG BUNS BURGER"<<endl;
@@ -125,7 +117,7 @@ int main(){
     		   cout<<"======================================================================================="<<endl;
     		return 0;
     		}
-	}while(pilih !=11);
+	}while(pilih !=10);
     system ("pause");
     system("cls");
     return 0;
